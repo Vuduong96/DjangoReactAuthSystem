@@ -89,16 +89,16 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'smei_db',
         'USER': 'postgres',
-        'PASSWORD': '10021996',
+        'PASSWORD': [YOUR_DB_PASSWORD],
         'HOST': 'localhost'
     }
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'm6122040121@g.siit.tu.ac.th'
-EMAIL_HOST_PASSWORD = 'cxnhakasmpxplfky'
+EMAIL_PORT = [YOUR_PORT]
+EMAIL_HOST_USER = [YOUR_EMAIL_ADDRESS]
+EMAIL_HOST_PASSWORD = [YOUR_PASSWORD]
 EMAIL_USE_TLS = True
 
 # Password validation
@@ -170,8 +170,6 @@ SIMPLE_JWT = {
 
 
 
-#email: m6122040121@g.siit.tu.ac.th
-#pass: cxnhakasmpxplfky
 DJOSER = {
     'LOGIN_FIELD': 'email',
     'USER_CREATE_PASSWORD_RETYPE': True,
